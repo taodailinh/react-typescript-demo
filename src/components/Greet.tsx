@@ -10,7 +10,7 @@ export const Greet = (props: GreetProps) => {
     <div>
       <h2>
         {props.isLogin
-          ? `Welcome ${props.name}, you have ${props.messageCount} unread messages`
+          ? `Welcome ${props.name}, you have ${messageCount} unread messages`
           : `Welcome guest!`}
       </h2>
     </div>
