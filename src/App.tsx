@@ -18,6 +18,9 @@ import { Counter } from "./components/class/Counter";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { Toast } from "./components/templateliterals/Toast";
+import { CustomButton } from "./components/html/Button";
+import { CustomInput } from "./components/html/Input";
+import { Text } from "./components/polymorphic/Text";
 
 const aName = {
   first: "Linh",
@@ -59,6 +62,16 @@ function App() {
       <Counter message="Bạn có" />
       <Private isLogin={true} component={Profile} />
       <Toast position="center" />
+      <CustomButton variant="primary" onClick={() => alert("HÙ 😂😂😂😂😂😂")}>
+        Click me!
+      </CustomButton>
+      <CustomInput />
+      <Text as="h4" size="sm" color="primary">
+        A text
+      </Text>
+      <Text as="label" htmlFor="someId" size="sm" color="primary">
+        A text
+      </Text>
     </>
   );
 }
